@@ -3,92 +3,97 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jQuery Mobile Web App</title>
+<title>Medicinal Tutors App</title>
 <link href="jquery.mobile-1.3.1.min.css" rel="stylesheet" type="text/css"/>
 <script src="jquery-1.6.4.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.3.1.min.js" type="text/javascript"></script>
+<link href="custom.css" rel="stylesheet" type="text/css"/>
 </head> 
 <body> 
 
-<div data-role="page" id="home" data-theme="a">
-	<div data-role="header">
-		<h1></h1>
-        <img src="images/MT_Logo.png" width="100%" alt="Medicinal Tutors">
+<div data-role="page" id="home">
+<div data-role="header"  data-position="fixed">
+<img src="images/MT_Logo.png" width="100%" alt="Logo">
+</div>
+	<div data-role="content">	
+		<div style="text-align: center;">
+<img src="images/mtvideoposter.PNG" width="100%" alt="Logo">
+</div>
+<p>We at Medicinal Tutors are the industry leader in video-based medical training for people in the medical field. Medicinal Tutors mission has always been to provide the highest calibre training that both educates and inspires, in order to help Students as well as Professionals achieve their personal goals. Whether your interests are Neurology, Ophthalmology, Basic body Sciences or even various Surgeries, our Trainings help Medical enthusiasts learn from the experience of others in order to save time and improve skills. Techniques that have taken our medical instructors years to master are available to students/professionals in a format that is unparalleled in medical education history. Our customers range from medical students who are just discovering the beautiful phase of medicine that lie ahead of them, to seasoned professionals with decades of experience.  Our Core Team members maintain a constant dialogue with the medical industry to ensure that Medicinal Tutors maintains its position as a critical industry resource. As the demand for Medical Professionals increases and the overall medical phenomena continues to mature, education is the foundation of our industry's future.</p>		
 	</div>
-	<div data-role="content" align="center">	
-		<br/>
-        <img src="images/mtvideoposter.PNG" width="100%"  alt="Medicinal Tutors">
-        <br/>
-        <br/>
-        <img src="images/explore the training.png" width="314px"  alt="Explore the training">
-        <div data-role="controlgroup" data-type="horizontal" align="center">
-			<a href="index.html" data-role="button">Students Series</a>
-			<a href="index.html" data-role="button">Professional Series</a>
-			
+	<div data-role="footer" data-position="fixed" data-id="nav">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+				<li><a href="#products">Products</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+</div>
+	</div>
+</div>
+
+<div data-role="page" id="products">
+	<div data-role="header"  data-position="fixed">
+		<img src="images/MT_Logo.png" width="100%" alt="Logo">
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#products" class="ui-btn-active ui-statepersist">Products</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</div>
 		</div>
-        <div class="ui-grid-a" align="center">
-          <div class="ui-block-a">
-          	<h3>Start learning today.</h3>
-            <a href="[url]" data-role="button"  style="background: #066; color: white;">SUBSCRIBE</a>
-            <h4>or Try a Free Demo Account</h4>
-          </div>
-          <div class="ui-block-b" align="center">
-          <div data-role="none" >
-          	<br/>
-            <br/>
-          
-			<a href="index.html" data-role="button" data-icon="star" data-iconpos="notext"></a>
-            <a href="index.html" data-role="button" data-icon="custom" data-iconpos="notext"></a>
-            <a href="index.html" data-role="button" data-icon="home" data-iconpos="notext"></a>
-			
+	</div>
+</div>
+
+<div data-role="page" id="contact">
+	<div data-role="header"  data-position="fixed">
+		<img src="images/MT_Logo.png" width="100%" alt="Logo">
+	</div>
+    
+	<div data-role="content">	
+		<h2 style="text-align: center;">Contact Medicinal Tutors</h2>
+		<form action="processForm.php" method="post" data-transition="pop">
+		<div data-role="fieldcontain">
+			<label for="senderName">Your Name:</label>
+			<input type="text" name="senderName" id="senderName">
 		</div>
-          
-          
-          </div>
-        </div>
-        
+        <div data-role="fieldcontain">
+			<label for="senderEmail">Your Email Address:</label>
+			<input type="email" name="senderEmail" id="senderEmail">
+		</div>
+		<div data-role="fieldcontain">
+			<label for="productCategories">What product categories are you interested in?</label>
+			<select name="productCategories[]" id="productCategories" multiple data-native-menu="false">
+				<option value="">Select...</option>
+				<option value="Lamps">Students Section</option>
+				<option value="Kitchen Equipment">Professional Section</option>
+			</select>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="message">Your Message:</label>
+			<textarea name="message" id="message" placeholder="Please type your message" required cols="80" rows="10" maxlength="10000"></textarea>
+		</div>
+			<input type="submit" name="sendMessage" id="sendMessage" value="Send Email">
+            </form>
+		</div>
+		<div data-role="footer" data-position="fixed" data-id="nav">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#contact" class="ui-btn-active ui-statepersist">Contact Us</a></li>
+				</ul>
+		</div>
+	</div>
         		
-	</div>
-	<div data-role="footer" align="center">
-		<h1>Medicinal Tutors is a registered trademark of S3D STUDIOS,Inc.</h1>
-	</div>
 </div>
-
-<div data-role="page" id="page2">
-	<div data-role="header">
-		<h1>Page Two</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
-<div data-role="page" id="page3">
-	<div data-role="header">
-		<h1>Page Three</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
-<div data-role="page" id="page4">
-	<div data-role="header">
-		<h1>Page Four</h1>
-	</div>
-	<div data-role="content">	
-		Content		
-	</div>
-	<div data-role="footer">
-		<h4>Page Footer</h4>
-	</div>
-</div>
-
+    
 </body>
 </html>
