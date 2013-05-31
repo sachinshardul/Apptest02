@@ -13,7 +13,11 @@
 }
 #home .ui-listview .ui-btn .ui-li { border: none; }
 #home .ui-listview .ui-btn .ui-li .ui-icon { display: none; }
-#home .ui-listview .ui-btn .ui-li .ui-link-inherit { font-size: .8em; font-weight: normal; padding: 80px 0px 0px 0px; text-align: center; }
+#home .ui-listview .ui-btn .ui-li .ui-link-inherit { font-size: 15px; font-weight: normal; padding: 80px 0px 0px 0px; text-align: center; color:#FBFBFB }
+
+#home .ui-listview .ui-btn .ui-li .ui-link-inherit:hover{
+	color:#F63
+}
 
 #home .ui-listview .ui-btn.btn_a { background-position: 0px 0px; }
 #home .ui-listview .ui-btn.btn_s { background-position: -85px 0px; }
